@@ -19,19 +19,13 @@ Como Usar
 3.  Escolha a opção desejada no menu interativo.
 
 Estrutura do Código
-
 •	ajuda(): Exibe informações sobre os conceitos abordados.
-
 •	tipos_primitivos(): Questões sobre os tipos primitivos do Python.
-
 •	operadores_matematicos(): Questões sobre os operadores aritméticos.
-
 •	ordem_de_precedencia(): Questões sobre a prioridade dos operadores.
-
 •	todos(): Executa todas as etapas de aprendizado.
 
 Estrutura do Projeto
-
 •	plano_estudo.py  # Arquivo principal do projeto
 •	README.md      # Documentação do projeto
 
