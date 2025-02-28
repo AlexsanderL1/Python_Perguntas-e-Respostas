@@ -1,39 +1,46 @@
-Estudando Python - Guia Interativo
+# 𓅔 Alexsander Lucio - Estudando Python 𓅔
 
 Este é um programa interativo para aprender conceitos básicos de Python, como tipos primitivos, operadores aritméticos e ordem de precedência. Ele apresenta perguntas e valida as respostas do usuário, fornecendo uma experiência dinâmica de aprendizado.
 
-🛠 Funcionalidades
+Funcionalidades
+• Ajuda: Exibe explicações sobre os conceitos abordados.
+•	Tipos Primitivos: Aprenda sobre int, float, bool e str.
+•	Operadores Aritméticos: Pratique operadores como +, -, *, /, //, ** e %.
+•	Ordem de Precedência: Teste seus conhecimentos sobre a hierarquia de operações matemáticas.
+•	Execução Interativa: O usuário escolhe qual módulo deseja estudar.
 
-📌 Ajuda: Exibe explicações sobre os conceitos abordados.
+Requisitos
+Antes de executar o projeto, certifique-se de ter os seguintes requisitos instalados:
+•	Python 3
 
-🔢 Tipos Primitivos: Aprenda sobre int, float, bool e str.
+Como Usar
+1.	Abra o terminal ou prompt de comando e execute:
+2.	python estudando_python.py
+3.  Escolha a opção desejada no menu interativo.
 
-➗ Operadores Aritméticos: Pratique operadores como +, -, *, /, //, ** e %.
+Estrutura do Código
 
-🎯 Ordem de Precedência: Teste seus conhecimentos sobre a hierarquia de operações matemáticas.
+•	ajuda(): Exibe informações sobre os conceitos abordados.
 
-🔄 Execução Interativa: O usuário escolhe qual módulo deseja estudar.
+•	tipos_primitivos(): Questões sobre os tipos primitivos do Python.
 
-🚀 Como Executar
+•	operadores_matematicos(): Questões sobre os operadores aritméticos.
 
-Certifique-se de ter o Python 3 instalado.
+•	ordem_de_precedencia(): Questões sobre a prioridade dos operadores.
 
-Baixe o arquivo estudando_python.py.
+•	todos(): Executa todas as etapas de aprendizado.
 
-Abra o terminal ou prompt de comando e execute:
+Estrutura do Projeto
 
-python estudando_python.py
+•	plano_estudo.py  # Arquivo principal do projeto
+•	README.md      # Documentação do projeto
 
-Escolha a opção desejada no menu interativo.
+Melhorias Futuras
+•	Adicionar mais conhecimentos básicos
+•	Adicionar mais questões
+•	Melhorar a leitura 
+•	Criar uma interface
 
-📖 Estrutura do Código
-
-ajuda(): Exibe informações sobre os conceitos abordados.
-
-tipos_primitivos(): Ensina os tipos primitivos do Python.
-
-operadores_matematicos(): Explica os operadores aritméticos.
-
-ordem_de_precedencia(): Ensina a prioridade dos operadores.
-
-todos(): Executa todas as etapas de aprendizado.
+Autor
+Desenvolvido por Alexsander Lucio Barboza.
+Sinta-se à vontade para contribuir e melhorar este projeto! 🚀
