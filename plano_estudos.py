@@ -1,7 +1,12 @@
+import time
+import os
+
 #Funções:
 
 def ajuda():    #Função de ajuda
-    print('\n---Tipos Primitivos:---'           #Tipos Primitivos
+    os.system('cls' if  os.name == 'nt' else 'clear')
+    print('*****Ajuda*****\n')
+    print('---Tipos Primitivos:---'           #Tipos Primitivos
           '\nint => Inteiros, Sem decimais'
           '\nfloat=> Numeros Reais,flutuantes ou Com decimais'
           '\n'
@@ -9,7 +14,7 @@ def ajuda():    #Função de ajuda
           '\nstr=> String, palavras.\n'
           )
 
-    print('\n---Operadores Aritiméticos:---'    #Operadores Aritiméticos
+    print('---Operadores Aritiméticos:---'    #Operadores Aritiméticos
           '\nSoma=> +'
           '\nSubtração=> -'
           '\nMultiplicação=> *'
@@ -17,14 +22,14 @@ def ajuda():    #Função de ajuda
           '\nDivisão Inteira=> //'
           '\nPotência=> **'
           '\n')
-    print('\n---Ordem de Precedência:---'       #Ordem de Precedencia
+    print('---Ordem de Precedência:---'       #Ordem de Precedencia
           '\n1° ()'
           '\n2° **'
           '\n3° * , /, //, %'
           '\n4° +, -\n '
           )
 
-def tipos_primitivos():
+def tipos_primitivos(): #Função Tipos Primitivos
     # Tipos Primitivos
     print('1. Vamos começar pelos tipos primitivos !\n\n')
 
@@ -72,7 +77,7 @@ def tipos_primitivos():
         else:
             print('ERRADO! Tente de novo!')
 
-def operadores_matematicos():
+def operadores_matematicos():   #Função Operadores Aritiméticos
     # Operadores Matemáticos
 
     print('2. Operadores matemáticos! Chegou sua hora\n\n')
@@ -154,7 +159,7 @@ def operadores_matematicos():
         else:
             print('ERRADO! Tente de novo!')
 
-def ordem_de_precedencia():
+def ordem_de_precedencia(): #Função Ordem de Precedência
     # Ordem de Precedencia
 
     print('3. Vamos a ordem de precedêcia !\n\n')
@@ -202,41 +207,47 @@ def ordem_de_precedencia():
         else:
             print('ERRADO! Tente de novo!')
 
-def todos():
+def todos():    #Função Todos
     tipos_primitivos()
     operadores_matematicos()
     ordem_de_precedencia()
 
 
-#Apresentação
-print('-'*5,'Estudando Python','-'*5)
+
 
 
 
 while True:
-    indice = input('\nDigite por onde quer começar:'
+    print('-'*5,'Estudando Python','-'*5)    #Apresentação
+
+    entrada = input('\nDigite por onde quer começar:'
                    '\n0- Todos '
                    '\n1- Tipos Primitivos'
                    '\n2- Operadores Aritimeticos'
                    '\n3- Ordem de Precedência'
                    '\n\n--> Digite o Número: '
     )
-
-    if indice.isnumeric():
-            if indice == 0:
+    try:
+            num = int(entrada)
+            if num == 0:
                 todos()
                 break
-            elif indice == 1:
+            elif num == 1:
                 tipos_primitivos()
                 break
-            elif indice == 2:
+            elif num == 2:
                 operadores_matematicos()
                 break
-
-            elif indice == 3:
+            elif num == 3:
                 ordem_de_precedencia()
                 break
             else:
-                print('Ainda não implementado')
-    else:
-        print('-'*5,'ERRO : Digite apenas números','-'*5)
+                os.system('cls' if  os.name == 'nt' else 'clear')
+                print('ERRO : Número ainda não implementado')
+                time.sleep(1)
+
+    except ValueError:
+        os.system('cls' if  os.name == 'nt' else 'clear')
+        print('ERRO : Digite apenas números')
+        time.sleep(1)
+        
