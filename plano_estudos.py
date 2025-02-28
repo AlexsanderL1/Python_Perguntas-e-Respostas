@@ -1,10 +1,28 @@
 #Funções:
-def ajuda():
-    print('\nTipos Primitivos:\nint => Inteiros, Sem decimais\nfloat=> Numeros Reais,flutuantes ou Com decimais\n'
-          'bool=> Booleanos, True ou False\nstr=> String, palavras.')
-    print('\nOperadores Aritiméticos:\nSoma=> +\nSubtração=> -\nMultiplicação=> *\nDivisão=> /\nDivisão Inteira=> //'
-          '\nPotência=> **\n')
-    print('\nOrdem de Precedência:\n1° ()\n2° **\n3° * , /, //, %\n4° +, -\n ')
+
+def ajuda():    #Função de ajuda
+    print('\n---Tipos Primitivos:---'           #Tipos Primitivos
+          '\nint => Inteiros, Sem decimais'
+          '\nfloat=> Numeros Reais,flutuantes ou Com decimais'
+          '\n'
+          'bool=> Booleanos, True ou False'
+          '\nstr=> String, palavras.\n'
+          )
+
+    print('\n---Operadores Aritiméticos:---'    #Operadores Aritiméticos
+          '\nSoma=> +'
+          '\nSubtração=> -'
+          '\nMultiplicação=> *'
+          '\nDivisão=> /'
+          '\nDivisão Inteira=> //'
+          '\nPotência=> **'
+          '\n')
+    print('\n---Ordem de Precedência:---'       #Ordem de Precedencia
+          '\n1° ()'
+          '\n2° **'
+          '\n3° * , /, //, %'
+          '\n4° +, -\n '
+          )
 
 def tipos_primitivos():
     # Tipos Primitivos
@@ -164,9 +182,8 @@ def ordem_de_precedencia():
 
     while True:
         print('3.3 Qual a ordem de procedência 3?(Digite "help" para ajuda)')
-    resp = input(
-            'Digite na sequência(multiplicação, Divisão, Divisão Inteira, Resto da Divisão)separando por espaços:\n').lower().strip()
-        if resp == '* / // %':
+        resp = input('Digite na sequência(multiplicação, Divisão, Divisão Inteira, Resto da Divisão)separando por espaços:\n').lower().strip()
+        if resp == ("* / // %"):
             print('EXATO!')
             break
         elif resp == 'help':
@@ -185,7 +202,6 @@ def ordem_de_precedencia():
         else:
             print('ERRADO! Tente de novo!')
 
-
 def todos():
     tipos_primitivos()
     operadores_matematicos()
@@ -193,24 +209,34 @@ def todos():
 
 
 #Apresentação
-print('-'*5,'Plano de Estudos do Alex','-'*5)
-
-indice = int(input('\nDigite por onde quer começar:\n0- Todos \n1- Tipos Primitivos\n2- Operadores Aritimeticos\n3- Ordem de Precedência\n'))
-if indice == 1 :
-    tipos_primitivos()
+print('-'*5,'Estudando Python','-'*5)
 
 
 
-elif indice == 2:
-    operadores_matematicos()
+while True:
+    indice = input('\nDigite por onde quer começar:'
+                   '\n0- Todos '
+                   '\n1- Tipos Primitivos'
+                   '\n2- Operadores Aritimeticos'
+                   '\n3- Ordem de Precedência'
+                   '\n\n--> Digite o Número: '
+    )
 
+    if indice.isnumeric():
+            if indice == 0:
+                todos()
+                break
+            elif indice == 1:
+                tipos_primitivos()
+                break
+            elif indice == 2:
+                operadores_matematicos()
+                break
 
-elif indice == 3:
-    ordem_de_precedencia()
-
-elif indice == 0:
-    todos()
-
-
-else:
-    print('Ainda não implementado')
+            elif indice == 3:
+                ordem_de_precedencia()
+                break
+            else:
+                print('Ainda não implementado')
+    else:
+        print('-'*5,'ERRO : Digite apenas números','-'*5)
