@@ -3,7 +3,8 @@ import os
 
 #Funções:
 
-def ajuda():                     #Função de ajuda
+def ajuda():                    #Função de ajuda
+    #Ajuda com todas as informações necessárias
     os.system('cls' if  os.name == 'nt' else 'clear')
     print('===== Ajuda =====\n')
     print('---Tipos Primitivos:---\n'           #Tipos Primitivos
@@ -178,8 +179,7 @@ def operadores_matematicos():   #Função Operadores Aritiméticos
             print('ERRADO! Tente de novo!')
 
 def ordem_de_precedencia():     #Função Ordem de Precedência
-    # Ordem de Precedencia
-
+    # Ordem de Precedência
     print('\n3. Vamos a ordem de precedêcia !\n\n')
     while True:
         print('3.1 Qual a prioridade 1?(Digite "help" para ajuda)')
