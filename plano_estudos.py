@@ -3,17 +3,16 @@ import os
 
 #Funções:
 
-def ajuda():                    #Função de ajuda
-    #Ajuda com todas as informações necessárias
+def ajuda():                    #Função de Ajuda
     os.system('cls' if  os.name == 'nt' else 'clear')
     print('\033[33m===== Ajuda =====\n')
-    print('---Tipos Primitivos:---\033[34m\n'           #Tipos Primitivos
+    print('---Tipos Primitivos:---\033[34m\n'                   #Tipos Primitivos
           '\nint    => Números Inteiros'
           '\nfloat  => Números Reais, com casas decimais'
           '\nbool   => Booleano, Verdadeiro ou Falso'
           '\nstr    => String, textos alfanuméricos\n')
 
-    print('\033[33m--- Operadores Aritiméticos ---\033[34m\n'    #Operadores Aritiméticos
+    print('\033[33m--- Operadores Aritiméticos ---\033[34m\n'   #Operadores Aritiméticos
           '\nSoma           => +'
           '\nSubtração      => -'
           '\nMultiplicação  => *'
@@ -22,13 +21,13 @@ def ajuda():                    #Função de ajuda
           '\nMódulo         => %'
           '\nPotência       => **\n')
 
-    print('\033[33m--- Ordem de Precedência ---\033[34m\n'       #Ordem de Precedencia
+    print('\033[33m--- Ordem de Precedência ---\033[34m\n'      #Ordem de Precedencia
           '\n1° ()'
           '\n2° **'
           '\n3° * , /, //, %'
           '\n4° +, -\n')
 
-    print('\033[33m--- Manipulação de Texto ---\033[34m\n'        #Manipulação de Texto
+    print('\033[33m--- Manipulação de Texto ---\033[34m\n'      #Manipulação de Texto
           '\n1- A contagem de caracteres começa do 0'
           '\n2- Para selecionar um caractere específico dentro de uma string, usamos []'
           '\n3- Para selecionar uma sequência de caracteres, usamos [:]'
@@ -329,7 +328,7 @@ def todos():                    #Função Todos
 
 def creditos():                 #Contatos e Créditos
     print('''\033[33m
----\033[34m---\033[34m---\033[34m---\033[34m---\033[34m---\033[34m-- Desenvolvido por Alexsander Lucio Barboza ---\033[34m---\033[34m---\033[34m---\033[34m---\033[34m---\033[34m--
+----------------------Desenvolvido por Alexsander Lucio Barboza----------------------\033[34m
 Email: alexlucio.dev@gmail.com || Linkedin: /alexsanderlucio || Github: /AlexsanderL1
         \033[0m''')
 
