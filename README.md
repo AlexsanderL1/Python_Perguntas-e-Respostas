@@ -1,46 +1,43 @@
-# Perguntas e Respostas Python
+# 🧠 Quiz Interativo de Fundamentos de Python
 
-Este é um programa interativo para aprender conceitos básicos de Python, como tipos primitivos, operadores aritméticos e ordem de precedência. Ele apresenta perguntas e valida as respostas do usuário, fornecendo uma experiência dinâmica de aprendizado.
+Projeto interativo em Python desenvolvido com o objetivo de reforçar e testar conhecimentos sobre os conceitos básicos da linguagem. O quiz abrange tópicos como tipos primitivos, operadores aritméticos, manipulação de texto e estrutura de controle, oferecendo uma experiência prática de aprendizado.
 
-**Funcionalidades**  
+## 🚀 Funcionalidades
 
-• Ajuda: Exibe explicações sobre os conceitos abordados.  
-•	Tipos Primitivos: Aprenda sobre int, float, bool e str.  
-•	Operadores Aritméticos: Pratique operadores como +, -, *, /, //, ** e %.  
-•	Ordem de Precedência: Teste seus conhecimentos sobre a hierarquia de operações matemáticas.  
-•	Execução Interativa: O usuário escolhe qual módulo deseja estudar.  
+- **Questões Interativas:** Perguntas com validação de respostas e feedback imediato.
+- **Sessão de Ajuda:** Ao digitar "help", informações detalhadas e dicas são exibidas para auxiliar no entendimento dos conceitos.
+- **Diversos Tópicos:** Cobre conceitos fundamentais, incluindo:
+  - Tipos de dados (int, float, bool, str)
+  - Operadores aritméticos e ordem de precedência
+  - Manipulação de strings e funções associadas (como `len()`, `.count()`, `.find()`, `.replace()`, etc.)
+- **Interface Terminal:** O uso de cores (através de sequências ANSI) melhora a legibilidade e o feedback visual.
 
-**Requisitos**  
+## 🛠️ Tecnologias Utilizadas
 
-Antes de executar o projeto, certifique-se de ter os seguintes requisitos instalados:  
-•	Python 3  
+- **Python 3.x**
+- **Bibliotecas Nativas:** `os`, `time`, `unicodedata`
 
-**Como Usar** 
+## 📦 Como Executar
 
-1.	Abra o terminal ou prompt de comando e execute:  
-2.	python estudando_python.py  
-3.  Escolha a opção desejada no menu interativo.  
+1. **Clone o repositório:**
 
-**Estrutura do Código**  
+   ```bash
+   git clone https://github.com/AlexsanderL1/quiz-interativo-python.git
+   cd quiz-interativo-python
+Execute o programa:
 
- •	ajuda(): Exibe informações sobre os conceitos abordados.  
- •	tipos_primitivos(): Questões sobre os tipos primitivos do Python.  
- •	operadores_matematicos(): Questões sobre os operadores aritméticos.  
- •	ordem_de_precedencia(): Questões sobre a prioridade dos operadores.  
- •	todos(): Executa todas as etapas de aprendizado.  
+bash
+Copiar
+Editar
+python main.py
+O quiz será iniciado no terminal, guiando você através de diversas questões para fixar conceitos fundamentais da linguagem.
 
-**Estrutura do Projeto**  
+📄 Licença
+Este projeto está sob a licença MIT.
 
- •	plano_estudo.py  # Arquivo principal do projeto  
- •	README.md      # Documentação do projeto  
-
-**Melhorias Futuras**  
-
- •	Adicionar mais conhecimentos básicos  
- •	Adicionar mais questões  
- •	Melhorar a leitura  
- •	Criar uma interface  
-
-## Autor  
-Desenvolvido por **Alexsander Lucio Barboza.**  
-Sinta-se à vontade para contribuir e melhorar este projeto! 🚀  
+👤 Contato
+Alexsander Lucio Barboza
+📧 Email: alexlucio.dev@gmail.com
+📱 Telefone: (21) 98136-6718
+🔗 LinkedIn
+🐙 GitHub
